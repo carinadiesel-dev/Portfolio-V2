@@ -1,12 +1,14 @@
 module.exports = {
   content: ['./*.html'],
   theme: {
-    colors: {
-      'Dark Jungle Green': '111c1a',
-      'Atomic Tangerine': 'ff9d70',
-      'Maximum Blue Purple': '9396f0',
-      'Metallic Seaweed': '18808c',
-      'International Klein Blue': '022fb6',
+    extend: {
+      colors: {
+        darkJungleGreen: '#111c1a',
+        atomicTangerine: '#ff9d70',
+        maximumBluePurple: '#9396f0',
+        metallicSeaweed: '#18808c',
+        internationalKleinBlue: '#022fb6',
+      },
     },
     fontFamily: {
       roboto: ['Roboto', 'sans-serif'],
