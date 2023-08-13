@@ -13,7 +13,7 @@ export function Contact() {
         <div className="pb-8">
           <h2 className="text-5xl font-bold text-transparent text-gray-0 text-brand bg-text-gradient bg-clip-text">Contact Me</h2>
         </div>
-        <p className="text-xl text-center lg:text-2xl text-ivory">Interested in working together ?</p>
+        <p className="py-2 text-xl text-center lg:text-2xl text-ivory">Interested in working together ?</p>
         <p className="text-xl lg:text-2xl text-center lg:max-w-[25ch] xl:max-w-[40ch] text-ivory pb-16">Get in touch by filling out this contact form or sending me an email to <a href="">carinadieseldev@gmail.com</a></p>
       </div>
       <Card className="flex items-center md:w-[30rem] p-8 border-2 border-primary bg-image-main" shadow={true}>

@@ -17,7 +17,7 @@ function App() {
       {/* <div className='flex flex-col gap-16 lg:gap-20'> */}
 
       <div className="flex flex-col w-full gap-8 bg-bottom bg-no-repeat bg-contain bg-gray-999 dark:bg-gray-999-dark ms-auto me-auto lg:gap-20 xl:gap-36 bg-footer">
-        <div className="relative flex flex-col h-[70rem] lg:h-[60rem] space-y-20 bg-opacity-50 bg-cover bg-hero lg:flex-row">
+        <div className="relative flex flex-col h-[75rem] lg:h-[60rem] space-y-20 bg-opacity-50 bg-cover bg-hero lg:flex-row">
           <div className="absolute flex justify-around w-screen h-full bg-darkModeBG/70">
             <div className="absolute top-10">
               <NavbarSimple />
@@ -55,7 +55,7 @@ function App() {
           <section className="container flex flex-col items-center justify-between gap-2 px-10 py-32 lg:flex-row">
             <Work />
           </section>
-          <section className="container lg:py-32">
+          <section className="container py-8 pb-20 lg:py-32">
             <Contact />
           </section>
         </div>
