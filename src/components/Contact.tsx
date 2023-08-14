@@ -27,42 +27,13 @@ export function Contact() {
           <div className="flex flex-col justify-center w-full gap-10 mb-4">
             <Input size="lg" label="Name" color="white"/>
             <Input size="lg" label="Email" color="white" type="text"/>
-            <Textarea size="lg" label="Message" color="light-blue"
-           className="!font-bold" labelProps={{
-            className: "text-white",
-          }}
-          containerProps={{ className: "min-w-[100px]" }} />
+            <Textarea size="lg" label="Message" className=" focus:border-white !placeholder-shown:border-t-white !placeholder-shown:border-white" labelProps={{
+          className: "text-white text-white peer-focus:text-white before:border-white peer-focus:before:!border-white after:border-white peer-focus:after:!border-white",
+        }} />
           </div>
-          {/* <Checkbox
-            label={
-              <Typography
-                variant="small"
-                color="gray"
-                className="flex items-center font-normal"
-              >
-                I agree the
-                <a
-                  href="#"
-                  className="font-medium transition-colors hover:text-blue-500"
-                >
-                  &nbsp;Terms and Conditions
-                </a>
-              </Typography>
-            }
-            containerProps={{ className: "-ml-2.5" }}
-          /> */}
           <Button className="mt-6 text-lg bg-primary hover:bg-trueBlue font-body" fullWidth>
             Submit
           </Button>
-          {/* <Typography color="gray" className="mt-4 font-normal text-center">
-            Already have an account?{" "}
-            <a
-              href="#"
-              className="font-medium text-blue-500 transition-colors hover:text-blue-700"
-            >
-              Sign In
-            </a>
-          </Typography> */}
         </form>
       </Card>
     </div>
