@@ -17,7 +17,7 @@ function NavList() {
         variant="small"
         className="p-1 text-xl font-bold text-ivory font-brand"
       >
-        <a href="#" className="flex items-center transition-colors hover:text-trueBlue">
+        <a href="#home" className="flex items-center transition-colors hover:text-trueBlue">
           Home
         </a>
       </Typography>
@@ -26,7 +26,7 @@ function NavList() {
         variant="small"
         className="p-1 text-xl font-bold text-ivory font-brand"
       >
-        <a href="#" className="flex items-center transition-colors hover:text-trueBlue">
+        <a href="#skills" className="flex items-center transition-colors hover:text-trueBlue">
           Skills
         </a>
       </Typography>
@@ -35,7 +35,7 @@ function NavList() {
         variant="small"
         className="p-1 text-xl font-bold font-brand text-ivory"
       >
-        <a href="#" className="flex items-center transition-colors hover:text-trueBlue">
+        <a href="#about" className="flex items-center transition-colors hover:text-trueBlue">
           About
         </a>
       </Typography>
@@ -44,7 +44,7 @@ function NavList() {
         variant="small"
         className="p-1 text-xl font-bold font-brand text-ivory"
       >
-        <a href="#" className="flex items-center transition-colors hover:text-trueBlue">
+        <a href="#work" className="flex items-center transition-colors hover:text-trueBlue">
           Work
         </a>
       </Typography>
@@ -53,7 +53,7 @@ function NavList() {
         variant="small"
         className="p-1 text-xl font-bold font-brand text-ivory"
       >
-        <a href="#" className="flex items-center transition-colors hover:text-trueBlue">
+        <a href="#contact" className="flex items-center transition-colors hover:text-trueBlue">
           Contact
         </a>
       </Typography>

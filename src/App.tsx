@@ -1,10 +1,8 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useRef } from 'react';
 import "./App.css";
 import Hero from "./components/Hero";
 import { NavbarSimple } from "./components/Navbar";
-import DarkModeToggle from "./components/darkModeToggle";
 import About from "./components/About";
 import Work from "./components/Work";
 import { Contact } from "./components/Contact";
@@ -36,7 +34,7 @@ function App() {
         </div>
         <div className="flex flex-col items-center">
 
-          <section className="container flex flex-col-reverse items-center justify-between gap-10 px-10 py-16 xl:justify-around lg:py-20 lg:px-5 md:px-16 xl:gap-2 lg:flex-row xl:pt-24 xl:pb-48">
+          <section id="about" className="container flex flex-col-reverse items-center justify-between gap-10 px-10 py-16 xl:justify-around lg:py-20 lg:px-5 md:px-16 xl:gap-2 lg:flex-row xl:pt-24 xl:pb-48">
             <img
               alt=""
               width="480"
@@ -47,15 +45,15 @@ function App() {
             <About />
           </section>
 
-          <section className="lg:pt-16">
+          <section id="skills" className="lg:pt-16">
             <Skills />
           </section>
 
           
-          <section className="container flex flex-col items-center justify-between gap-2 px-10 py-32 lg:flex-row">
+          <section id="work" className="container flex flex-col items-center justify-between gap-2 px-10 py-32 lg:flex-row">
             <Work />
           </section>
-          <section className="container py-8 pb-20 lg:py-32">
+          <section id="contact" className="container py-8 pb-20 lg:py-32">
             <Contact />
           </section>
         </div>
