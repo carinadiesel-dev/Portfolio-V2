@@ -68,11 +68,11 @@ const Work = ({}:WorkProps) => {
     
     let projects = [project1]
   return (
-    <div className='w-full lg:mb-16'>
+    <div className='w-full'>
         <div className='flex flex-col items-center gap-4 lg:items-start'>
         <h2 className="text-5xl font-bold text-transparent pb-7 bg-text-gradient bg-clip-text">My Work</h2>
 		<p className='pb-16 text-2xl text-center lg:text-right text-ivory'>Learn about my most recent projects</p>
-        <div>
+        <div className='flex flex-col lg:flex-row'>
             {projects.map(el =>{
                 return(
                     <CardItem {...el} />

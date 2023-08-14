@@ -30,7 +30,7 @@ export function FooterWithSocialLinks() {
             Carina Diesel
           </Typography>
           <div className="flex justify-between gap-4 justify-self-center md:justify-self-end">
-              <ul className="flex flex-col gap-4 text-center md:text-end">
+              <ul className="flex flex-col gap-4 text-center lg:gap-2 md:text-end">
                 {LINKS.map((item,index) => (
                   <li key={index}>
                     <Typography

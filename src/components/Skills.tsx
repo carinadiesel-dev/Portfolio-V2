@@ -94,10 +94,10 @@ const Skills = ({}:SkillsProps) => {
 
     let skills = [skill1,skill2,skill3,skill4,skill5,skill6, skill7, skill8]
     return (
-        <div className="container flex flex-col items-center py-20 lg:py-0 md:px-5 lg:pb-36">
+        <div className="container flex flex-col items-center py-20 lg:py-0 md:px-5 lg:pb-28">
 <h2 className="text-6xl font-bold text-transparent pb-28 lg:pb-20 bg-text-gradient bg-clip-text">Skills</h2>
 <Card className="w-full bg-inherit">
-      <ul className="grid items-center grid-cols-1 gap-16 md:grid-cols-2 lg:gap-8 lg:grid-cols-4">
+      <ul className="grid items-center grid-cols-1 gap-16 md:grid-cols-2 lg:gap-8 lg:grid-cols-3 xl:grid-cols-4">
         {skills.map(el => {
             return(
                 <SkillsItem {...el} />

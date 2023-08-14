@@ -76,7 +76,7 @@ export function NavbarSimple() {
   }, []);
  
   return (
-    <Navbar className="py-3 border-none shadow-md w-[95vw] bg-primary">
+    <Navbar className="border-none shadow-md w-[90vw] md:w-[95vw] bg-primary">
       <div className="flex items-center justify-between text-gray-50">
         <Typography
           as="a"

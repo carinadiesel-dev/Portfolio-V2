@@ -16,13 +16,13 @@ function App() {
     <>
       {/* <div className='flex flex-col gap-16 lg:gap-20'> */}
 
-      <div className="flex flex-col w-full gap-8 bg-bottom bg-no-repeat bg-contain bg-gray-999 dark:bg-gray-999-dark ms-auto me-auto lg:gap-20 xl:gap-36 bg-footer">
-        <div className="relative flex flex-col h-[75rem] lg:h-[60rem] space-y-20 bg-opacity-50 bg-cover bg-hero lg:flex-row">
-          <div className="absolute flex justify-around w-screen h-full bg-darkModeBG/70">
+      <div className="flex flex-col w-full gap-8 overflow-hidden bg-bottom bg-no-repeat bg-contain bg-gray-999 dark:bg-gray-999-dark lg:gap-20 xl:gap-36 bg-footer">
+        <div className="relative flex flex-col h-[75rem] sm:h-[85rem] lg:h-[60rem] space-y-20 bg-opacity-50 bg-cover bg-hero lg:flex-row">
+          <div className="absolute flex justify-around w-screen h-full overflow-hidden bg-darkModeBG/70">
             <div className="absolute top-10">
               <NavbarSimple />
             </div>
-            <div className="flex flex-col items-center gap-16 p-5 pt-40 rounded-lg lg:px-5 xl:gap-24 lg:flex-row lg:pt-36">
+            <div className="flex flex-col items-center gap-16 px-5 pt-40 rounded-lg lg:px-5 xl:gap-24 lg:flex-row lg:pt-36">
               <Hero />
               <img
                 alt="Carina standing with her hand under her chin in a blue shirt and striped blazer"
