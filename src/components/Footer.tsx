@@ -46,7 +46,7 @@ export function FooterWithSocialLinks() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-blue-gray-50 md:flex-row md:justify-between ">
+        <div className="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-blue-gray-50 md:flex-row md:justify-between lg:px-3">
           <Typography
             variant="small"
             className="mb-4 font-normal text-center text-md md:mb-0 lg:mb-4 text-ivory"
@@ -54,7 +54,7 @@ export function FooterWithSocialLinks() {
             &copy; {currentYear} <a href="https://material-tailwind.com/">Carina Diesel</a>. All
             Rights Reserved.
           </Typography>
-          <div className="flex gap-6 py-5 md:gap-4 text-ivory sm:justify-center lg:mb-2">
+          <div className="flex gap-6 py-5 md:gap-4 text-ivory sm:justify-center lg:mb-2 ">
             {/* LinkedIn */}
             <Typography as="a" href="https://www.linkedin.com/in/carinadieseldev/" className="transition-opacity opacity-80 hover:opacity-100">
             <svg className="w-10 h-10 md:w-5 md:h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path></svg>
