@@ -76,7 +76,7 @@ export function NavbarSimple() {
   }, []);
  
   return (
-    <Navbar className="border-none shadow-md w-[90vw] md:w-[95vw] bg-primary">
+    <Navbar className="top-5 border-none shadow-md w-[90vw] md:w-[95vw] bg-primary">
       <div className="flex items-center justify-between text-gray-50">
         <Typography
           as="a"

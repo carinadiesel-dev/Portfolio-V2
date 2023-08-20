@@ -6,7 +6,14 @@ import {
   Textarea
 } from "@material-tailwind/react";
 
+import { useForm, ValidationError } from '@formspree/react';
+
 export function Contact() {
+  const [state, handleSubmit] = useForm("xaygoeqz");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
+  
   return (
     <div className="flex flex-col items-center justify-around px-10 lg:px-5 lg:flex-row">
       <div className="flex flex-col items-center justify-center gap-4">
@@ -23,15 +30,15 @@ export function Contact() {
         <Typography color="gray" className="mt-1 text-lg font-normal font-body text-ivory">
           Enter your details and message.
         </Typography>
-        <form className="mt-8 mb-2 w-60 xs:w-80 sm:w-80 md:w-96 max-w-[26rem]">
+        <form className="mt-8 mb-2 w-60 xs:w-80 sm:w-80 md:w-96 max-w-[26rem]" onSubmit={handleSubmit}>
           <div className="flex flex-col justify-center w-full gap-10 mb-4">
             <Input size="lg" label="Name" color="white"/>
             <Input size="lg" label="Email" color="white" type="text"/>
-            <Textarea size="lg" label="Message" className=" focus:border-white !placeholder-shown:border-t-white !placeholder-shown:border-white" labelProps={{
-          className: "text-white text-white peer-focus:text-white before:border-white peer-focus:before:!border-white after:border-white peer-focus:after:!border-white",
+            <Textarea size="lg" label="Message" className=" focus:border-white !placeholder-shown:border-t-white !placeholder-shown:border-white !text-white" labelProps={{
+          className: "!text-white peer-focus:text-white before:border-white peer-focus:before:!border-white after:border-white peer-focus:after:!border-white",
         }} />
           </div>
-          <Button className="mt-6 text-lg bg-primary hover:bg-trueBlue font-body" fullWidth>
+          <Button type="submit" disabled={state.submitting} className="mt-6 text-lg bg-primary hover:bg-trueBlue font-body" fullWidth>
             Submit
           </Button>
         </form>
