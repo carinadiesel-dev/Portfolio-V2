@@ -53,11 +53,11 @@ export function Contact() {
         </p>
         <p className="text-xl md:text-2xl text-center md:max-w-[30ch] xl:max-w-[40ch] text-ivory pb-16">
           Get in touch by filling out this contact form or sending me an email
-          to <a href="">carinadieseldev@gmail.com</a>
+          by clicking <a className="underline hover:text-trueBlue" href="mailto:carinadiesel@gmail.com">here</a>
         </p>
       </div>
       <Card
-        className="flex relative items-center md:w-[30rem] p-8 border-2 border-primary bg-image-main"
+        className="flex relative items-center md:w-[30rem] p-8 border-2 border-purple-dark bg-image-main"
         shadow={true}
       >
         <Typography
@@ -78,9 +78,23 @@ export function Contact() {
           onSubmit={handleSubmit}
         >
           <div className="flex flex-col justify-center w-full gap-10 mb-4">
-            <Input size="lg" label="Name" color="white" type="text" id="name" className="!bg-transparent"/>
+            <Input
+              size="lg"
+              label="Name"
+              color="white"
+              type="text"
+              id="name"
+              className="!bg-transparent"
+            />
             <ValidationError prefix="Name" field="name" errors={state.errors} />
-            <Input size="lg" label="Email" color="white" type="email" id="email" className="!bg-transparent"/>
+            <Input
+              size="lg"
+              label="Email"
+              color="white"
+              type="email"
+              id="email"
+              className="!bg-transparent"
+            />
             <ValidationError
               prefix="Email"
               field="email"
@@ -96,17 +110,17 @@ export function Contact() {
                   "!text-white peer-focus:text-white before:border-white peer-focus:before:!border-white after:border-white peer-focus:after:!border-white",
               }}
             />
-             <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
-         
+
           <Button
             type="submit"
             disabled={state.submitting}
-            className="mt-6 text-lg bg-primary hover:bg-trueBlue font-body"
+            className="mt-6 text-lg bg-purple-dark hover:bg-trueBlue font-body"
             fullWidth
           >
             Submit
@@ -116,7 +130,7 @@ export function Contact() {
           <Dialog
             open={open}
             handler={handleOpen}
-            className="grid p-5 border-2 bg-image-main rounded-xl border-primary place-items-center"
+            className="grid p-5 border-2 bg-image-main rounded-xl border-purple-dark place-items-center"
           >
             <DialogHeader className="flex gap-4 text-white">
               <Icon /> Submission Succesfull
@@ -130,7 +144,7 @@ export function Contact() {
               <Button
                 variant="text"
                 onClick={handleOpen}
-                className="mr-1 text-white bg-primary hover:bg-trueBlue"
+                className="mr-1 text-white bg-purple-dark hover:bg-trueBlue"
               >
                 <span>Close</span>
               </Button>

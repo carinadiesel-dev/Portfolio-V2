@@ -8,7 +8,6 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import DarkModeToggle from "./darkModeToggle";
 
- 
 function NavList() {
   return (
     <ul className="flex flex-col gap-2 my-2 text-2xl lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-gray-50">
@@ -17,7 +16,10 @@ function NavList() {
         variant="small"
         className="p-1 text-xl font-bold text-ivory font-brand"
       >
-        <a href="#home" className="flex items-center transition-colors hover:text-trueBlue">
+        <a
+          href="#home"
+          className="flex items-center transition-colors hover:text-trueBlue"
+        >
           Home
         </a>
       </Typography>
@@ -26,7 +28,10 @@ function NavList() {
         variant="small"
         className="p-1 text-xl font-bold text-ivory font-brand"
       >
-        <a href="#skills" className="flex items-center transition-colors hover:text-trueBlue">
+        <a
+          href="#skills"
+          className="flex items-center transition-colors hover:text-trueBlue"
+        >
           Skills
         </a>
       </Typography>
@@ -35,7 +40,10 @@ function NavList() {
         variant="small"
         className="p-1 text-xl font-bold font-brand text-ivory"
       >
-        <a href="#about" className="flex items-center transition-colors hover:text-trueBlue">
+        <a
+          href="#about"
+          className="flex items-center transition-colors hover:text-trueBlue"
+        >
           About
         </a>
       </Typography>
@@ -44,7 +52,10 @@ function NavList() {
         variant="small"
         className="p-1 text-xl font-bold font-brand text-ivory"
       >
-        <a href="#work" className="flex items-center transition-colors hover:text-trueBlue">
+        <a
+          href="#work"
+          className="flex items-center transition-colors hover:text-trueBlue"
+        >
           Work
         </a>
       </Typography>
@@ -53,30 +64,33 @@ function NavList() {
         variant="small"
         className="p-1 text-xl font-bold font-brand text-ivory"
       >
-        <a href="#contact" className="flex items-center transition-colors hover:text-trueBlue">
+        <a
+          href="#contact"
+          className="flex items-center transition-colors hover:text-trueBlue"
+        >
           Contact
         </a>
       </Typography>
     </ul>
   );
 }
- 
+
 export function NavbarSimple() {
   const [openNav, setOpenNav] = React.useState(false);
- 
+
   const handleWindowResize = () =>
     window.innerWidth >= 960 && setOpenNav(false);
- 
+
   React.useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
- 
+
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
- 
+
   return (
-    <Navbar className="top-5 border-none shadow-md w-[90vw] md:w-[95vw] bg-primary">
+    <Navbar className="top-5 border-none shadow-md w-[90vw] md:w-[95vw] bg-purple-dark">
       <div className="flex items-center justify-between text-gray-50">
         <Typography
           as="a"
@@ -84,7 +98,7 @@ export function NavbarSimple() {
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 text-xl font-bold font-brand text-ivory active:text-gray-300"
         >
-         Carina Diesel
+          Carina Diesel
         </Typography>
         <div className="hidden lg:block">
           <NavList />

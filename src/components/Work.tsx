@@ -1,37 +1,35 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent } from "react";
 import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-    Button,
-    Tooltip,
-    IconButton,
-  } from "@material-tailwind/react";
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+  Tooltip,
+  IconButton,
+} from "@material-tailwind/react";
 
 type CardRow = {
-    image: string,
-    title: string,
-    aboutTxt: string,
-}
+  image: string;
+  title: string;
+  aboutTxt: string;
+};
 
-const CardItem : FunctionComponent<CardRow> = ({
-    image,
-    title,
-    aboutTxt
-}) => {
-    return (
-        <Card className="w-full max-w-[26rem] shadow-lg bg-image-main bg-center bg-cover border-primary border-2">
+const CardItem: FunctionComponent<CardRow> = ({ image, title, aboutTxt }) => {
+  return (
+    <Card className="w-full max-w-[26rem] shadow-lg bg-image-main bg-center bg-cover border-purple-dark border-2">
       <CardHeader floated={false} color="blue-gray">
-        <img
-          src={image}
-        />
+        <img src={image} />
         <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60" />
       </CardHeader>
       <CardBody>
         <div className="flex items-center justify-between pt-3 mb-5 font-brand">
-          <Typography variant="h5" color="blue-gray" className="text-2xl text-brand text-ivory">
+          <Typography
+            variant="h5"
+            color="blue-gray"
+            className="text-2xl text-brand text-ivory"
+          >
             {title}
           </Typography>
         </div>
@@ -40,47 +38,55 @@ const CardItem : FunctionComponent<CardRow> = ({
         </Typography>
       </CardBody>
       <CardFooter className="flex gap-2 pt-5">
-        <Button size="lg" fullWidth={true} className='bg-primary hover:bg-trueBlue'>
+        <Button
+          size="lg"
+          fullWidth={true}
+          className="bg-purple-dark hover:bg-trueBlue"
+        >
           Repository
         </Button>
-        <Button size="lg" fullWidth={true} className='bg-primary hover:bg-trueBlue'>
+        <Button
+          size="lg"
+          fullWidth={true}
+          className="bg-purple-dark hover:bg-trueBlue"
+        >
           Live Demo
         </Button>
       </CardFooter>
     </Card>
-    )
-}
+  );
+};
 
-type Project = {
+type Project = {};
 
-}
+type WorkProps = {};
 
-type WorkProps = {
+const Work = ({}: WorkProps) => {
+  let project1 = {
+    image: "/src/assets/calico-creatives.png",
+    title: "Calico Creatives",
+    aboutTxt:
+      "Website for Calico Creatives. Design created in Adobe XD by Calico Creatives owner,and I translated the design to a React and Tailwind Website.",
+  };
 
-}
-
-const Work = ({}:WorkProps) => {
-    let project1 = {
-        image: "/src/assets/calico-creatives.png",
-        title: "Calico Creatives",
-        aboutTxt: "Website for Calico Creatives. Design created in Adobe XD by Calico Creatives owner,and I translated the design to a React and Tailwind Website."
-    }
-    
-    let projects = [project1]
+  let projects = [project1];
   return (
-    <div className='w-full'>
-        <div className='flex flex-col items-center gap-4 lg:items-start'>
-        <h2 className="text-5xl font-bold text-transparent pb-7 bg-text-gradient bg-clip-text">My Work</h2>
-		<p className='pb-16 text-2xl text-center lg:text-right text-ivory'>Learn about my most recent projects</p>
-        <div className='flex flex-col lg:flex-row'>
-            {projects.map(el =>{
-                return(
-                    <CardItem {...el} />
-                )})}
+    <div className="w-full">
+      <div className="flex flex-col items-center gap-4 lg:items-start">
+        <h2 className="text-5xl font-bold text-transparent pb-7 bg-text-gradient bg-clip-text">
+          My Work
+        </h2>
+        <p className="pb-16 text-2xl text-center lg:text-right text-ivory">
+          Learn about my most recent projects
+        </p>
+        <div className="flex flex-col lg:flex-row">
+          {projects.map((el) => {
+            return <CardItem {...el} />;
+          })}
         </div>
-        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;
