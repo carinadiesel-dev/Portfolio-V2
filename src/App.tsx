@@ -8,14 +8,14 @@ import { FooterWithSocialLinks } from "./components/Footer";
 import Skills from "./components/Skills";
 import Portrait from "../public/assets/Carina-Portrait.jpg";
 import AtWork from "../public/assets/at-work.jpg";
-import Working from "../public/assets/Carina-8159.jpg"
+import Working from "../public/assets/Carina-8159.jpg";
 
 function App() {
   return (
     <>
       {/* <div className='flex flex-col gap-16 lg:gap-20'> */}
 
-      <div className="flex flex-col w-full gap-8 overflow-hidden bg-bottom bg-no-repeat bg-contain bg-gray-999 dark:bg-gray-999-dark lg:gap-20 xl:gap-36 bg-footer">
+      <div className="flex flex-col w-full gap-8 overflow-hidden lg:gap-20 xl:gap-36">
         <div className="relative flex flex-col h-[75rem] sm:h-[85rem] lg:h-[60rem] space-y-20 bg-opacity-50 bg-cover bg-hero lg:flex-row">
           <div className="absolute flex justify-around w-screen h-full overflow-hidden bg-darkModeBG/70">
             <div className="absolute top-10">
@@ -34,8 +34,10 @@ function App() {
           </div>
         </div>
         <div className="flex flex-col items-center">
-
-          <section id="about" className="container flex flex-col-reverse items-center justify-between gap-10 px-10 py-16 xl:justify-around lg:py-20 lg:px-5 md:px-16 xl:gap-2 lg:flex-row xl:pt-24 xl:pb-48">
+          <section
+            id="about"
+            className="container flex flex-col-reverse items-center justify-between gap-10 px-10 py-16 xl:justify-around lg:py-20 lg:px-5 md:px-16 xl:gap-2 lg:flex-row xl:pt-24 xl:pb-48"
+          >
             <img
               alt=""
               width="480"
@@ -46,12 +48,17 @@ function App() {
             <About />
           </section>
 
-          <section id="skills" className="flex items-center justify-center w-full bg-cover lg:pt-16 bg-circuitBoard">
+          <section
+            id="skills"
+            className="flex items-center justify-center w-full bg-cover lg:pt-16 bg-circuitBoard"
+          >
             <Skills />
           </section>
 
-          
-          <section id="work" className="container flex flex-col items-center justify-between gap-2 px-10 py-32 lg:flex-row">
+          <section
+            id="work"
+            className="container flex flex-col items-center justify-between gap-2 px-10 py-32 lg:flex-row"
+          >
             <Work />
           </section>
           <section id="contact" className="container py-8 pb-20 lg:py-32">
@@ -62,7 +69,6 @@ function App() {
         <footer className="">
           <FooterWithSocialLinks />
         </footer>
-
       </div>
     </>
   );

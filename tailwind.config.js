@@ -33,7 +33,7 @@ module.exports = withMT({
         jetGray: "#343434",
         darkModeBG: "#0a0b10",
         "gradient-accent-orange-dark":
-        "linear-gradient(150deg,#ca7879,#7611a6,#1c0056)",
+          "linear-gradient(150deg,#ca7879,#7611a6,#1c0056)",
         "purple-dark": "#7611a6",
       },
       fontFamily: {
@@ -61,7 +61,7 @@ module.exports = withMT({
           "linear-gradient(90deg, rgba(17,157,164,1) 0%, rgba(140,70,216,1) 50%, rgba(35,99,209,1) 100%)",
         "gradient-accent-orange-dark":
           "linear-gradient(150deg,#ca7879,#7611a6,rgba(35,99,209,1))",
-          "circuitBoard": "url('/public/assets/circuit-board.svg')"
+        circuitBoard: "url('/public/assets/circuit-board.svg')",
       },
       screen: {
         xs: "475px",

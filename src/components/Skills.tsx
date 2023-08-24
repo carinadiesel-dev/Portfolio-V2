@@ -1,8 +1,4 @@
-import {
-  Avatar,
-  Card,
-  Typography,
-} from "@material-tailwind/react";
+import { Avatar, Card, Typography } from "@material-tailwind/react";
 import { FunctionComponent } from "react";
 
 import HTML from "../../public/assets/stack/HTML5.png";
@@ -14,7 +10,6 @@ import TypeScript from "../../public/assets/stack/TypeScript.png";
 import React from "../../public/assets/stack/React.png";
 import Next from "../../public/assets/stack/Next.js.png";
 
-
 type SkillsRow = {
   title: string;
   avatar: string;
@@ -23,7 +18,7 @@ type SkillsRow = {
 
 const SkillsItem: FunctionComponent<SkillsRow> = ({ title, avatar, level }) => {
   return (
-    <li className="container flex items-center justify-center h-32 gap-8 p-5 bg-cover bg-bottom-right rounded-2xl lg:h-28 bg-[#1c0056] shadow-[#1c0056] shadow-md ">
+    <li className="container flex items-center justify-center h-32 gap-8 p-5 bg-cover bg-bottom-right rounded-2xl lg:h-28 bg-purple-dark shadow-[#1c0056] shadow-lg ">
       <div>
         <Avatar variant="square" src={avatar} />
       </div>
@@ -42,7 +37,6 @@ const SkillsItem: FunctionComponent<SkillsRow> = ({ title, avatar, level }) => {
     </li>
   );
 };
-
 
 type SkillsProps = {};
 

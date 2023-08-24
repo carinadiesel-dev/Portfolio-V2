@@ -51,9 +51,15 @@ export function Contact() {
         <p className="py-2 text-xl text-center md:text-2xl text-ivory">
           Interested in working together ?
         </p>
-        <p className="text-xl md:text-2xl text-center md:max-w-[30ch] xl:max-w-[40ch] text-ivory pb-16">
+        <p className="text-xl md:text-2xl text-center md:max-w-[30ch] xl:max-w-[40ch] text-ivory pb-12">
           Get in touch by filling out this contact form or sending me an email
-          by clicking <a className="underline hover:text-trueBlue" href="mailto:carinadiesel@gmail.com">here</a>
+          by clicking{" "}
+          <a
+            className="underline hover:text-trueBlue"
+            href="mailto:carinadiesel@gmail.com"
+          >
+            here
+          </a>
         </p>
       </div>
       <Card
@@ -65,13 +71,7 @@ export function Contact() {
           color="blue-gray"
           className="text-transparent font-brand bg-text-gradient bg-clip-text"
         >
-          Contact Me
-        </Typography>
-        <Typography
-          color="gray"
-          className="mt-1 text-lg font-normal font-body text-ivory"
-        >
-          Enter your details and message.
+          Get in touch
         </Typography>
         <form
           className="mt-8 mb-2 w-60 xs:w-80 sm:w-80 md:w-96 max-w-[26rem]"
