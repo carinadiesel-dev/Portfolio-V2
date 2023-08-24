@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { useRef } from 'react';
 import "./App.css";
 import Hero from "./components/Hero";
 import { NavbarSimple } from "./components/Navbar";
@@ -8,6 +6,9 @@ import Work from "./components/Work";
 import { Contact } from "./components/Contact";
 import { FooterWithSocialLinks } from "./components/Footer";
 import Skills from "./components/Skills";
+import Portrait from "../public/assets/Carina-Portrait.jpg";
+import AtWork from "../public/assets/at-work.jpg";
+import Working from "../public/assets/Carina-8159.jpg"
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
                 alt="Carina standing with her hand under her chin in a blue shirt and striped blazer"
                 width="480"
                 height="620"
-                src="/src/assets/Carina-Portrait.jpg"
+                src={Portrait}
                 className="rounded-[4.5rem] aspect-[3/4] object-cover"
               />
             </div>
@@ -39,13 +40,13 @@ function App() {
               alt=""
               width="480"
               height="620"
-              src="/src/assets/at-work.jpg"
+              src={Working}
               className="rounded-[4.5rem] aspect-[3/4] object-cover"
             />
             <About />
           </section>
 
-          <section id="skills" className="lg:pt-16">
+          <section id="skills" className="flex items-center justify-center w-full bg-cover lg:pt-16 bg-circuitBoard">
             <Skills />
           </section>
 

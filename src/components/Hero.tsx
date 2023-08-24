@@ -1,5 +1,5 @@
-import React from "react";
 import { Button } from "@material-tailwind/react";
+
 
 type HeroProps = {
   title?: string;
@@ -42,7 +42,7 @@ const Hero = ({}: HeroProps) => {
           </Button>
         </a>
         <a
-          href="../assets/CV-CarinaDiesel.pdf"
+          href="/public/assets/CV-CarinaDiesel.pdf"
           target="_blank"
           className="w-full"
         >

@@ -1,12 +1,19 @@
 import {
-  List,
-  ListItem,
-  ListItemPrefix,
   Avatar,
   Card,
   Typography,
 } from "@material-tailwind/react";
 import { FunctionComponent } from "react";
+
+import HTML from "../../public/assets/stack/HTML5.png";
+import CSS from "../../public/assets/stack/CSS3.png";
+import SASS from "../../public/assets/stack/Sass.png";
+import Tailwind from "../../public/assets/stack/TailwindCSS.png";
+import JavaScript from "../../public/assets/stack/JavaScript.png";
+import TypeScript from "../../public/assets/stack/TypeScript.png";
+import React from "../../public/assets/stack/React.png";
+import Next from "../../public/assets/stack/Next.js.png";
+
 
 type SkillsRow = {
   title: string;
@@ -16,7 +23,7 @@ type SkillsRow = {
 
 const SkillsItem: FunctionComponent<SkillsRow> = ({ title, avatar, level }) => {
   return (
-    <li className="flex items-center justify-center h-32 gap-8 p-5 bg-cover shadow-lg bg-bottom-right rounded-2xl lg:h-28 bg-image-main">
+    <li className="container flex items-center justify-center h-32 gap-8 p-5 bg-cover bg-bottom-right rounded-2xl lg:h-28 bg-[#1c0056] shadow-[#1c0056] shadow-md ">
       <div>
         <Avatar variant="square" src={avatar} />
       </div>
@@ -36,56 +43,55 @@ const SkillsItem: FunctionComponent<SkillsRow> = ({ title, avatar, level }) => {
   );
 };
 
-type Skill = {};
 
 type SkillsProps = {};
 
 const Skills = ({}: SkillsProps) => {
   let skill1 = {
     title: "HTML",
-    avatar: "/src/assets/stack/HTML5.png",
+    avatar: `${HTML}`,
     level: "Very Proficient",
   };
 
   let skill2 = {
     title: "CSS",
-    avatar: "/src/assets/stack/CSS3.png",
+    avatar: `${CSS}`,
     level: "Very Proficient",
   };
 
   let skill3 = {
     title: "SASS",
-    avatar: "/src/assets/stack/Sass.png",
+    avatar: `${SASS}`,
     level: "Minimal",
   };
 
   let skill4 = {
     title: "Tailwind CSS",
-    avatar: "/src/assets/stack/TailwindCSS.png",
+    avatar: `${Tailwind}`,
     level: "Very Proficient",
   };
 
   let skill5 = {
     title: "JavaScript",
-    avatar: "/src/assets/stack/JavaScript.png",
+    avatar: `${JavaScript}`,
     level: "Very Proficient",
   };
 
   let skill6 = {
     title: "TypeScript",
-    avatar: "/src/assets/stack/TypeScript.png",
+    avatar: `${TypeScript}`,
     level: "Proficient",
   };
 
   let skill7 = {
     title: "ReactJS",
-    avatar: "/src/assets/stack/React.png",
+    avatar: `${React}`,
     level: "Proficient",
   };
 
   let skill8 = {
     title: "NextJS",
-    avatar: "/src/assets/stack/Next.js.png",
+    avatar: `${Next}`,
     level: "Competent",
   };
 

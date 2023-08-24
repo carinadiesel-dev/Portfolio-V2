@@ -54,13 +54,14 @@ module.exports = withMT({
         brand: "Rubik",
       },
       backgroundImage: {
-        "image-main": "url('./src/assets/backgrounds/bg-main-dark-800w.jpg')",
-        footer: "url('./src/assets/backgrounds/bg-main-footer-1440w.jpg')",
-        hero: "url('./src/assets/at-work.jpg')",
+        "image-main": "url('/public/assets/backgrounds/bg-main-dark-800w.jpg')",
+        footer: "url('/public/assets/backgrounds/bg-main-footer-1440w.jpg')",
+        hero: "url('/public/assets/hero.jpg')",
         "text-gradient":
           "linear-gradient(90deg, rgba(17,157,164,1) 0%, rgba(140,70,216,1) 50%, rgba(35,99,209,1) 100%)",
         "gradient-accent-orange-dark":
           "linear-gradient(150deg,#ca7879,#7611a6,rgba(35,99,209,1))",
+          "circuitBoard": "url('/public/assets/circuit-board.svg')"
       },
       screen: {
         xs: "475px",
