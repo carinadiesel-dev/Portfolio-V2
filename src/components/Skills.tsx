@@ -18,7 +18,7 @@ type SkillsRow = {
 
 const SkillsItem: FunctionComponent<SkillsRow> = ({ title, avatar, level }) => {
   return (
-    <li className="container flex items-center justify-center h-32 gap-8 p-5 bg-cover bg-bottom-right rounded-2xl lg:h-28 bg-purple-dark shadow-[#1c0056] shadow-lg ">
+    <li className="container flex items-center justify-center h-32 gap-8 p-5 bg-cover shadow-xl bg-bottom-right rounded-2xl lg:h-28 bg-darkModeBG shadow-purple-dark/90">
       <div>
         <Avatar variant="square" src={avatar} />
       </div>
@@ -91,7 +91,7 @@ const Skills = ({}: SkillsProps) => {
 
   let skills = [skill1, skill2, skill3, skill4, skill5, skill6, skill7, skill8];
   return (
-    <div className="container flex flex-col items-center py-20 lg:py-0 md:px-5 lg:pb-28">
+    <div className="container flex flex-col items-center px-5 py-20 lg:py-0 lg:pb-28">
       <h2 className="text-6xl font-bold text-transparent pb-28 lg:pb-20 bg-text-gradient bg-clip-text">
         Skills
       </h2>
