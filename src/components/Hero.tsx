@@ -18,7 +18,7 @@ const Hero = ({}: HeroProps) => {
           South Africa.
         </p>
       </div>
-      <div className="flex flex-col items-center justify-center w-full gap-10 pt-5 md:gap-8 lg:gap-4 lg:flex-row lg:w-[29rem] md:w-96 lg:justify-between">
+      <div className="grid grid-cols-2 items-center justify-center w-full gap-10 pt-5 md:gap-8 lg:gap-4 lg:flex-row lg:w-[29rem] md:w-96 lg:justify-between">
         <a
           href="https://www.linkedin.com/in/carinadieseldev/"
           target="_blank"
@@ -64,6 +64,27 @@ const Hero = ({}: HeroProps) => {
             Github
           </Button>
         </a>
+        <a
+          href="/public/assets/CV-CarinaDiesel.pdf"
+          className="flex items-center col-span-2 gap-2 transition-colors lg:mt-4 hover:text-trueBlue"
+        >
+          <Button
+            size="lg"
+            className="flex items-center justify-center w-full gap-2 font-brand bg-purple-dark hover:bg-trueBlue"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="#ffff"
+              viewBox="0 0 256 256"
+              className="hover:fill-trueBlue"
+            >
+              <path d="M216.49,79.52l-56-56A12,12,0,0,0,152,20H56A20,20,0,0,0,36,40V216a20,20,0,0,0,20,20H200a20,20,0,0,0,20-20V88A12,12,0,0,0,216.49,79.52ZM160,57l23,23H160ZM60,212V44h76V92a12,12,0,0,0,12,12h48V212Zm100.49-60.49a12,12,0,0,1,0,17l-24,24a12,12,0,0,1-17,0l-24-24a12,12,0,0,1,17-17L116,155V124a12,12,0,0,1,24,0v31l3.51-3.52A12,12,0,0,1,160.49,151.51Z"></path>
+            </svg>{" "}
+            Download CV
+          </Button>
+        </a>
       </div>
       <slot />
     </header>
@@ -71,3 +92,10 @@ const Hero = ({}: HeroProps) => {
 };
 
 export default Hero;
+
+<a
+  href="/public/assets/CV-CarinaDiesel.pdf"
+  className="flex items-center gap-2 transition-colors hover:text-trueBlue"
+>
+  CV
+</a>;

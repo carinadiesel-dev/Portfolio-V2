@@ -70,7 +70,7 @@ function NavList() {
           Contact
         </a>
       </Typography>
-      <Typography
+      {/* <Typography
         as="li"
         variant="small"
         className="py-1 text-xl font-bold font-brand text-ivory"
@@ -91,7 +91,7 @@ function NavList() {
           </svg>
           CV
         </a>
-      </Typography>
+      </Typography> */}
     </ul>
   );
 }
