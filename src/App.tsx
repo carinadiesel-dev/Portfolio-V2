@@ -16,7 +16,7 @@ function App() {
       {/* <div className='flex flex-col gap-16 lg:gap-20'> */}
 
       <div className="flex flex-col w-full gap-8 overflow-hidden lg:gap-20 xl:gap-36">
-        <div className="relative flex flex-col h-[75rem] sm:h-[85rem] lg:h-[60rem] space-y-20 bg-opacity-50 bg-cover bg-hero lg:flex-row">
+        <div className="relative flex flex-col h-[90rem] sm:h-[95rem] md:h-[90rem] lg:h-[60rem] space-y-20 bg-opacity-50 bg-cover bg-hero lg:flex-row">
           <div className="absolute flex justify-around w-screen h-full overflow-hidden bg-darkModeBG/70">
             <div className="absolute top-10">
               <NavbarSimple />
