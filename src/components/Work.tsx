@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { FunctionComponent } from "react";
 
-import CCImage from "../../public/assets/calico-creatives.png";
+import CCImage from "../assets/calico-creatives.png";
 
 type CardRow = {
   image: string;
@@ -17,7 +17,12 @@ type CardRow = {
   repoLink: string;
 };
 
-const CardItem: FunctionComponent<CardRow> = ({ image, title, aboutTxt, repoLink }) => {
+const CardItem: FunctionComponent<CardRow> = ({
+  image,
+  title,
+  aboutTxt,
+  repoLink,
+}) => {
   return (
     <Card className="w-full max-w-[26rem] shadow-lg bg-image-main bg-center bg-cover border-purple-dark border-2">
       <CardHeader floated={false} color="blue-gray">
@@ -39,27 +44,28 @@ const CardItem: FunctionComponent<CardRow> = ({ image, title, aboutTxt, repoLink
         </Typography>
       </CardBody>
       <CardFooter className="flex gap-2 pt-5">
-      <a className="w-full" href="#">
-        <Button
-          size="lg"
-          fullWidth={true}
-          className="bg-purple-dark hover:bg-trueBlue"
-        >
-          Website
-        </Button>
+        <a className="w-full" href="#">
+          <Button
+            size="lg"
+            fullWidth={true}
+            className="bg-purple-dark hover:bg-trueBlue"
+          >
+            Website
+          </Button>
         </a>
-        <a className="w-full" href={repoLink} target="_blank"><Button
-          size="lg"
-          fullWidth={true}
-          className="bg-purple-dark hover:bg-trueBlue"
-        >
-          Github
-        </Button></a>
+        <a className="w-full" href={repoLink} target="_blank">
+          <Button
+            size="lg"
+            fullWidth={true}
+            className="bg-purple-dark hover:bg-trueBlue"
+          >
+            Github
+          </Button>
+        </a>
       </CardFooter>
     </Card>
   );
 };
-
 
 type WorkProps = {};
 
@@ -69,7 +75,8 @@ const Work = ({}: WorkProps) => {
     title: "Calico Creatives",
     aboutTxt:
       "Website for Calico Creatives. Design created in Adobe XD by Calico Creatives owner,and I translated the design to a React and Tailwind Website.",
-    repoLink: "https://github.com/carinadiesel-dev/calico-creatives-react/tree/main/FINAL"
+    repoLink:
+      "https://github.com/carinadiesel-dev/calico-creatives-react/tree/main/FINAL",
   };
 
   let projects = [project1];

@@ -6,9 +6,8 @@ import Work from "./components/Work";
 import { Contact } from "./components/Contact";
 import { FooterWithSocialLinks } from "./components/Footer";
 import Skills from "./components/Skills";
-import Portrait from "../public/assets/Carina-Portrait.jpg";
-import AtWork from "../public/assets/at-work.jpg";
-import Working from "../public/assets/Carina-8159.jpg";
+import Portrait from "./assets/Carina-Portrait.jpg";
+import Working from "./assets/work.jpg";
 
 function App() {
   return (

@@ -1,14 +1,14 @@
 import { Avatar, Card, Typography } from "@material-tailwind/react";
 import { FunctionComponent } from "react";
 
-import HTML from "../../public/assets/stack/HTML5.png";
-import CSS from "../../public/assets/stack/CSS3.png";
-import SASS from "../../public/assets/stack/Sass.png";
-import Tailwind from "../../public/assets/stack/TailwindCSS.png";
-import JavaScript from "../../public/assets/stack/JavaScript.png";
-import TypeScript from "../../public/assets/stack/TypeScript.png";
-import React from "../../public/assets/stack/React.png";
-import Next from "../../public/assets/stack/Next.js.png";
+import HTML from "../assets/stack/HTML5.png";
+import CSS from "../assets/stack/CSS3.png";
+import SASS from "../assets/stack/Sass.png";
+import Tailwind from "../assets/stack/TailwindCSS.png";
+import JavaScript from "../assets/stack/JavaScript.png";
+import TypeScript from "../assets/stack/TypeScript.png";
+import React from "../assets/stack/React.png";
+import Next from "../assets/stack/Next.js.png";
 
 type SkillsRow = {
   title: string;

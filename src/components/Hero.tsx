@@ -32,7 +32,7 @@ const Hero = ({}: HeroProps) => {
               xmlns="http://www.w3.org/2000/svg"
               fill="#ffff"
               viewBox="0 0 256 256"
-              className="w-10 h-10"
+              className="w-10 h-10 lg:h-5 lg:w-5"
             >
               <path d="M216,20H40A20,20,0,0,0,20,40V216a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V40A20,20,0,0,0,216,20Zm-4,192H44V44H212ZM112,176V124a12,12,0,0,1,21.43-7.41A40,40,0,0,1,192,152v24a12,12,0,0,1-24,0V152a16,16,0,0,0-32,0v24a12,12,0,0,1-24,0ZM96,124v52a12,12,0,0,1-24,0V124a12,12,0,0,1,24,0ZM68,80A16,16,0,1,1,84,96,16,16,0,0,1,68,80Z"></path>
             </svg>
@@ -49,7 +49,7 @@ const Hero = ({}: HeroProps) => {
             className="flex items-center justify-center w-full gap-4 lg:gap-2 font-brand bg-purple-dark hover:bg-trueBlue"
           >
             <svg
-              className="w-10 h-10"
+              className="w-10 h-10 lg:h-5 lg:w-5"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -75,7 +75,7 @@ const Hero = ({}: HeroProps) => {
               xmlns="http://www.w3.org/2000/svg"
               fill="#ffff"
               viewBox="0 0 256 256"
-              className="w-10 h-10 hover:fill-trueBlue"
+              className="w-10 h-10 hover:fill-trueBlue lg:h-5 lg:w-5"
             >
               <path d="M216.49,79.52l-56-56A12,12,0,0,0,152,20H56A20,20,0,0,0,36,40V216a20,20,0,0,0,20,20H200a20,20,0,0,0,20-20V88A12,12,0,0,0,216.49,79.52ZM160,57l23,23H160ZM60,212V44h76V92a12,12,0,0,0,12,12h48V212Zm100.49-60.49a12,12,0,0,1,0,17l-24,24a12,12,0,0,1-17,0l-24-24a12,12,0,0,1,17-17L116,155V124a12,12,0,0,1,24,0v31l3.51-3.52A12,12,0,0,1,160.49,151.51Z"></path>
             </svg>{" "}
@@ -89,10 +89,3 @@ const Hero = ({}: HeroProps) => {
 };
 
 export default Hero;
-
-<a
-  href="/public/assets/CV-CarinaDiesel.pdf"
-  className="flex items-center gap-2 transition-colors hover:text-trueBlue"
->
-  CV
-</a>;
