@@ -25,7 +25,7 @@ export function FooterWithSocialLinks() {
   return (
     <footer className="w-screen pt-5 bg-cover text-ivory bg-circuitBoard">
       <div className="container mx-auto">
-        <div className="flex gap-6 py-5 text-ivory sm:justify-center lg:mb-2 ">
+        <div className="flex justify-center gap-8 py-8 lg:py-10 lg:gap-10 text-ivory lg:mb-2 md:gap-16">
           {/* LinkedIn */}
           <Typography
             as="a"
@@ -211,14 +211,14 @@ export function FooterWithSocialLinks() {
           </Typography>
         </div>
         <div className="flex items-center justify-center gap-4 lg:gap-8">
-          <ul className="flex items-center justify-center gap-4 text-center lg:gap-16">
+          <ul className="items-center justify-center hidden text-center md:gap-10 md:flex lg:gap-16">
             {LINKS.map((item, index) => (
               <li key={index}>
                 <Typography
                   as="a"
                   href={item.link}
                   color="gray"
-                  className="py-1.5 lg:py-2 text-white font-brand text-lg lg:text-xl transition-colors hover:text-blueViolet"
+                  className="py-1.5 lg:py-2 text-white font-brand text-xl transition-colors hover:text-blueViolet"
                 >
                   {item.title}
                 </Typography>
@@ -229,7 +229,7 @@ export function FooterWithSocialLinks() {
         <div className="flex flex-col items-center justify-center w-full py-8 mt-8 border-t border-top-2 border-purple-primary md:flex-row lg:px-3">
           <Typography
             variant="small"
-            className="mb-4 font-normal text-center text-md md:mb-0 lg:mb-4 text-ivory"
+            className="mb-0 font-normal text-center text-md text-ivory"
           >
             &copy; {currentYear} Carina Diesel. All Rights Reserved.
           </Typography>
