@@ -33,12 +33,9 @@ function Icon() {
 }
 
 export function Contact() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const handleOpen = () => setOpen(!open);
   const [state, handleSubmit] = useForm("xaygoeqz");
-  if (state.succeeded) {
-    setOpen(open);
-  }
 
   return (
     <div className="flex flex-col items-center justify-around px-10 lg:px-5 lg:flex-row">
@@ -74,8 +71,8 @@ export function Contact() {
           Get in touch
         </Typography>
         <form
-          className="mt-8 mb-2 w-60 xs:w-80 sm:w-80 md:w-96 max-w-[26rem]"
           onSubmit={handleSubmit}
+          className="mt-8 mb-2 w-60 xs:w-80 sm:w-80 md:w-96 max-w-[26rem]"
         >
           <div className="flex flex-col justify-center w-full gap-10 mb-4">
             <Input
@@ -84,6 +81,7 @@ export function Contact() {
               color="white"
               type="text"
               id="name"
+              name="name"
               className="!bg-transparent"
             />
             <ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -93,6 +91,7 @@ export function Contact() {
               color="white"
               type="email"
               id="email"
+              name="email"
               className="!bg-transparent"
             />
             <ValidationError
@@ -104,6 +103,7 @@ export function Contact() {
               size="lg"
               label="Message"
               id="message"
+              name="message"
               className=" focus:border-white !placeholder-shown:border-t-white !placeholder-shown:border-white !text-white"
               labelProps={{
                 className:
@@ -126,31 +126,34 @@ export function Contact() {
             Submit
           </Button>
         </form>
-        <div className="absolute flex flex-col px-5 top-5">
-          <Dialog
-            open={open}
-            handler={handleOpen}
-            className="grid p-5 border-2 bg-image-main rounded-xl border-purple-dark place-items-center"
-          >
-            <DialogHeader className="flex gap-4 text-white">
-              <Icon /> Submission Succesfull
-            </DialogHeader>
-            <DialogBody className="grid text-lg leading-loose text-center text-white place-items-center">
-              Thanks for reaching out !
-              <br />I have received your message and I will get back to you as
-              soon as possible.
-            </DialogBody>
-            <DialogFooter>
-              <Button
-                variant="text"
-                onClick={handleOpen}
-                className="mr-1 text-white bg-purple-dark hover:bg-trueBlue"
-              >
-                <span>Close</span>
-              </Button>
-            </DialogFooter>
-          </Dialog>
-        </div>
+
+        {state.succeeded && (
+          <div className="absolute flex flex-col px-5 top-5">
+            <Dialog
+              open={open}
+              handler={handleOpen}
+              className="grid p-5 border-2 bg-darkModeBG rounded-xl border-purple-dark place-items-center"
+            >
+              <DialogHeader className="flex gap-4 text-white">
+                <Icon /> Submission Succesfull
+              </DialogHeader>
+              <DialogBody className="grid text-lg leading-loose text-center text-white place-items-center">
+                Thanks for reaching out !
+                <br />I have received your message and I will get back to you as
+                soon as possible.
+              </DialogBody>
+              <DialogFooter>
+                <Button
+                  variant="text"
+                  onClick={handleOpen}
+                  className="mr-1 text-white bg-purple-dark hover:bg-trueBlue"
+                >
+                  <span>Close</span>
+                </Button>
+              </DialogFooter>
+            </Dialog>
+          </div>
+        )}
       </Card>
     </div>
   );
