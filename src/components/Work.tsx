@@ -48,7 +48,6 @@ const CardItem: FunctionComponent<CardRow> = ({
       <CardFooter className="flex gap-2 pt-5">
         <a className="w-full" href={websiteLink}>
           <Button
-            disabled
             size="lg"
             fullWidth={true}
             className="bg-purple-dark hover:bg-trueBlue"
