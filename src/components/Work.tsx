@@ -46,7 +46,7 @@ const CardItem: FunctionComponent<CardRow> = ({
         </Typography>
       </CardBody>
       <CardFooter className="flex gap-2 pt-5">
-        <a className="w-full" href={websiteLink}>
+        <a className="w-full" href={websiteLink} target="_blank">
           <Button
             size="lg"
             fullWidth={true}
