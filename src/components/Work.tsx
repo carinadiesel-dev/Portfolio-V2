@@ -15,6 +15,7 @@ type CardRow = {
   title: string;
   aboutTxt: string;
   repoLink: string;
+  websiteLink: string;
 };
 
 const CardItem: FunctionComponent<CardRow> = ({
@@ -22,6 +23,7 @@ const CardItem: FunctionComponent<CardRow> = ({
   title,
   aboutTxt,
   repoLink,
+  websiteLink,
 }) => {
   return (
     <Card className="w-full max-w-[26rem] shadow-lg bg-image-main bg-center bg-cover border-purple-dark border-2">
@@ -44,14 +46,14 @@ const CardItem: FunctionComponent<CardRow> = ({
         </Typography>
       </CardBody>
       <CardFooter className="flex gap-2 pt-5">
-        <a className="w-full" href="#">
+        <a className="w-full" href={websiteLink}>
           <Button
             disabled
             size="lg"
             fullWidth={true}
             className="bg-purple-dark hover:bg-trueBlue"
           >
-            Website
+            Demo
           </Button>
         </a>
         <a className="w-full" href={repoLink} target="_blank">
@@ -77,7 +79,8 @@ const Work = ({}: WorkProps) => {
     aboutTxt:
       "Website for Calico Creatives. Design created in Adobe XD by Calico Creatives owner,and I translated the design to a React and Tailwind Website.",
     repoLink:
-      "https://github.com/carinadiesel-dev/calico-creatives-react/tree/main/FINAL",
+      "https://github.com/carinadiesel-dev/calico-creatives-react/tree/production",
+    websiteLink: "https://calicocreatives-e35c8.firebaseapp.com/",
   };
 
   let projects = [project1];
