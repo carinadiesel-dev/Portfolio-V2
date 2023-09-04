@@ -174,7 +174,7 @@ const Work = ({}: WorkProps) => {
             <CardFooter className="flex gap-2 pt-5">
               <a
                 className="w-full"
-                href={`https://github.com/carinadiesel-dev/calico-creatives-react/tree/production`}
+                href={`https://github.com/carinadiesel-dev/weather-react`}
                 target="_blank"
               >
                 <Button
