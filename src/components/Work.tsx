@@ -100,7 +100,7 @@ const Work = ({}: WorkProps) => {
         </div> */}
         <div className="flex flex-col justify-center w-full gap-40 lg:gap-20 lg:flex-row">
           <Card className="w-full max-w-[26rem] shadow-lg bg-image-main bg-center bg-cover border-purple-dark border-2 grid">
-            <CardHeader floated={false} color="blue-gray">
+            <CardHeader floated={false} color="transparent">
               <img src={CCImage} />
               <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60" />
             </CardHeader>
@@ -151,7 +151,7 @@ const Work = ({}: WorkProps) => {
           </Card>
 
           <Card className="w-full max-w-[26rem] shadow-lg bg-image-main bg-center bg-cover border-purple-dark border-2 grid justify-between">
-            <CardHeader floated={false} color="blue-gray">
+            <CardHeader floated={false} color="transparent">
               <img src={weatherApp} className="" />
               <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60" />
             </CardHeader>
@@ -217,14 +217,14 @@ const Work = ({}: WorkProps) => {
               </a>
             </CardFooter>
           </Card>
-          <Card className="grid w-full max-w-[26rem] shadow-lg bg-image-main bg-center bg-cover border-purple-dark border-2">
-            <CardHeader floated={false} color="blue-gray">
+          <Card className="grid w-full max-w-[26rem] shadow-md bg-image-main bg-center bg-cover border-purple-dark border-2">
+            <CardHeader floated={false} color="transparent">
               {/* <img src={CCImage} /> */}
               <svg
                 version="1.0"
                 xmlns="http://www.w3.org/2000/svg"
                 width="300.000000pt"
-                height="150.000000pt"
+                height="140.000000pt"
                 viewBox="0 0 300.000000 315.000000"
                 preserveAspectRatio="xMidYMid meet"
               >
