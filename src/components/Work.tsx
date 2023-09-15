@@ -99,13 +99,13 @@ const Work = ({}: WorkProps) => {
           })} 
         </div> */}
         <div className="flex flex-col justify-center w-full gap-40 lg:gap-20 lg:flex-row">
-          <Card className="w-full max-w-[26rem] shadow-lg bg-image-main bg-center bg-cover border-purple-dark border-2">
+          <Card className="w-full max-w-[26rem] shadow-lg bg-image-main bg-center bg-cover border-purple-dark border-2 grid">
             <CardHeader floated={false} color="blue-gray">
               <img src={CCImage} />
               <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60" />
             </CardHeader>
             <CardBody>
-              <div className="flex items-center justify-between pt-3 mb-5 font-brand">
+              <div className="grid pt-3 mb-5 place-items-center font-brand">
                 <Typography
                   variant="h5"
                   color="blue-gray"
@@ -123,7 +123,7 @@ const Work = ({}: WorkProps) => {
             <CardFooter className="flex gap-2 pt-5">
               <a
                 className="w-full"
-                href={`https://calicocreatives-e35c8.firebaseapp.com/`}
+                href={`https://calicocreatives.net`}
                 target="_blank"
               >
                 <Button
@@ -131,7 +131,7 @@ const Work = ({}: WorkProps) => {
                   fullWidth={true}
                   className="bg-purple-dark hover:bg-trueBlue"
                 >
-                  Demo
+                  Website
                 </Button>
               </a>
               <a
@@ -150,28 +150,58 @@ const Work = ({}: WorkProps) => {
             </CardFooter>
           </Card>
 
-          <Card className="w-full max-w-[26rem] shadow-lg bg-image-main bg-center bg-cover border-purple-dark border-2">
+          <Card className="w-full max-w-[26rem] shadow-lg bg-image-main bg-center bg-cover border-purple-dark border-2 grid justify-between">
             <CardHeader floated={false} color="blue-gray">
-              <img src={weatherApp} />
+              <img src={weatherApp} className="" />
               <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60" />
             </CardHeader>
             <CardBody>
-              <div className="flex items-center justify-between pt-3 mb-5 font-brand">
+              <div className="grid pt-2 mb-5 place-items-center font-brand">
                 <Typography
                   variant="h5"
                   color="blue-gray"
                   className="text-2xl text-brand text-ivory"
                 >
-                  Personal Project - Weather App{" "}
-                  <span className="text-darkCyan">In Progress</span>
+                  Weather App
+                </Typography>
+                <Typography
+                  variant="h5"
+                  color="blue-gray"
+                  className="text-xl text-brand text-darkCyan"
+                >
+                  (Personal Project)
                 </Typography>
               </div>
-              <Typography className="text-lg font-body text-ivory" color="gray">
-                Weather App created with React and Radix UI. Design and concept
-                from Dev Challenges
-              </Typography>
+              <div className="grid gap-4">
+                <Typography
+                  className="text-lg font-body text-ivory"
+                  color="gray"
+                >
+                  Basic Weather App to practice working with APIs and useContext
+                  in React.
+                </Typography>
+                <Typography className="text-lg font-body text-ivory">
+                  Based on design by{" "}
+                  <a href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">
+                    Dev Challenges
+                  </a>
+                </Typography>
+              </div>
             </CardBody>
-            <CardFooter className="flex gap-2 pt-5">
+            <CardFooter className="flex gap-2 pt-3">
+              <a
+                className="w-full"
+                href={`https://react-weather-app-5cf4c.web.app/`}
+                target="_blank"
+              >
+                <Button
+                  size="lg"
+                  fullWidth={true}
+                  className="bg-purple-dark hover:bg-trueBlue"
+                >
+                  Demo
+                </Button>
+              </a>
               <a
                 className="w-full"
                 href={`https://github.com/carinadiesel-dev/weather-react`}
@@ -182,10 +212,33 @@ const Work = ({}: WorkProps) => {
                   fullWidth={true}
                   className="bg-purple-dark hover:bg-trueBlue"
                 >
-                  Github Repo
+                  Github
                 </Button>
               </a>
             </CardFooter>
+          </Card>
+          <Card className="w-full max-w-[26rem] shadow-lg bg-image-main bg-center bg-cover border-purple-dark border-2">
+            <CardHeader floated={false} color="blue-gray">
+              <img src={CCImage} />
+              <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60" />
+            </CardHeader>
+            <CardBody>
+              <div className="flex items-center justify-between pt-3 mb-5 font-brand">
+                <Typography
+                  variant="h5"
+                  color="blue-gray"
+                  className="text-2xl text-brand text-ivory"
+                >
+                  Mox Monolith
+                </Typography>
+              </div>
+              <Typography className="text-lg font-body text-ivory" color="gray">
+                Website for Calico Creatives. Design created in Adobe XD by
+                Calico Creatives owner,and I translated the design to a React
+                and Tailwind Website.
+              </Typography>
+            </CardBody>
+            <CardFooter className="flex gap-2 pt-5"></CardFooter>
           </Card>
         </div>
       </div>
