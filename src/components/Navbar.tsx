@@ -1,15 +1,15 @@
-import React from "react";
-import {
-  Navbar,
-  Collapse,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Collapse,
+  IconButton,
+  Navbar,
+  Typography,
+} from "@material-tailwind/react";
+import React from "react";
 
 function NavList() {
   return (
-    <ul className="flex flex-col gap-2 my-2 text-2xl lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-gray-50">
+    <ul className="flex flex-col gap-8 my-2 text-2xl lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-gray-50">
       <Typography
         as="li"
         variant="small"
@@ -117,7 +117,7 @@ export function NavbarSimple() {
           as="a"
           href="#"
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5 text-xl font-bold font-brand text-ivory active:text-gray-300"
+          className="mr-4 cursor-pointer mb-3 lg:mb-0 py-1.5 text-xl font-bold font-brand text-ivory active:text-gray-300"
         >
           Carina Diesel
         </Typography>
@@ -126,7 +126,7 @@ export function NavbarSimple() {
         </div>
         <IconButton
           variant="text"
-          className="w-6 h-6 ml-auto text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="z-[100] w-6 h-6 ml-auto text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >

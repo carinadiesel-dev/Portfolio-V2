@@ -1,13 +1,13 @@
 import "./App.css";
-import Hero from "./components/Hero";
-import { NavbarSimple } from "./components/Navbar";
-import About from "./components/About";
-import Work from "./components/Work";
-import { Contact } from "./components/Contact";
-import { FooterWithSocialLinks } from "./components/Footer";
-import Skills from "./components/Skills";
 import Portrait from "./assets/Carina-Portrait.jpg";
 import Working from "./assets/work.jpg";
+import About from "./components/About";
+import { Contact } from "./components/Contact";
+import { FooterWithSocialLinks } from "./components/Footer";
+import Hero from "./components/Hero";
+import { NavbarSimple } from "./components/Navbar";
+import Skills from "./components/Skills";
+import Work from "./components/Work";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <div className="flex flex-col w-full gap-8 overflow-hidden lg:gap-20 xl:gap-36">
         <div className="relative flex flex-col h-[90rem] sm:h-[95rem] md:h-[90rem] lg:h-[60rem] space-y-20 bg-opacity-50 bg-cover bg-hero lg:flex-row">
           <div className="absolute flex justify-around w-screen h-full overflow-hidden bg-darkModeBG/70">
-            <div className="absolute top-10">
+            <div className="absolute z-50 top-10">
               <NavbarSimple />
             </div>
             <div className="flex flex-col items-center gap-16 px-5 pt-40 rounded-lg lg:px-5 xl:gap-24 lg:flex-row lg:pt-36">
