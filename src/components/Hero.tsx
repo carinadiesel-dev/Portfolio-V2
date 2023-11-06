@@ -64,7 +64,7 @@ const Hero = ({}: HeroProps) => {
           </Button>
         </a>
         <a
-          href="/src/assets/CV-CarinaDiesel.pdf"
+          href="/CV-CarinaDiesel.pdf"
           download="carinadieselCV.pdf"
           className="flex items-center gap-2 transition-colors lg:col-span-2 lg:mt-4 hover:text-trueBlue"
         >
